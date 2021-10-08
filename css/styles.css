@@ -1,0 +1,151 @@
+/* body {
+    margin: 0;
+    padding: 0;
+} */
+* {
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;;
+}
+header {
+    background: #192841;
+    color: #fff;
+    text-align: center;
+    margin: 0 -8px;
+}
+
+footer {
+    text-align: center;
+}
+
+h1 {
+    margin-top: -10px;
+    padding: 30px; 
+    font-size: 1.7em;
+}
+
+h2 {
+    font-size: 1.45rem;
+    color: #192841;
+}
+
+h2:not(:first-child) {
+    padding: 10px 0;
+}
+
+label,
+p {
+    color: #777;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border: 3px solid #192841;
+    /* background: #192841; */
+}
+
+input,
+select {
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-color: #f4f4f4;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+    border: none;
+}
+
+input[required]::placeholder {
+    text-align: right;
+    font-size: 15px;
+}
+
+select:not(:valid) {
+    color: #aaa;
+  }
+
+option {
+    color: #000;
+}
+
+textarea {
+    width: 100%;
+    border-color: #f4f4f4;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+    border: none;
+    resize: none;
+    margin: 20px 0;
+}
+
+form div:first-child{
+    display: flex;
+    flex-direction: column;
+}
+
+.signup_head {
+    text-align: center;
+    border-bottom: 3px solid #192841;
+    margin-bottom: 3px;
+    padding-bottom: 20px;
+}
+
+.main-info,
+.newsletter {
+    border-top: 2px solid #192841;
+}
+
+.newsletter {
+    margin-top: 2em;
+}
+
+label[for="comment"]{
+    display: inline-block;
+    padding-top: 20px;
+}
+
+button {
+    width: 100%;
+    height: 70px;
+    border-radius: 5px;
+    font-size: 30px;
+    color: #fff;
+    background-color: turquoise;
+    border: none;
+}
+
+#zip {
+    width: 30%;
+}
+
+/* Media Queries */
+
+@media(min-width: 768px){
+    form div:first-child{
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: turquoise;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="number"],
+    select {
+        display: inline-block;
+        width: 70%;
+        height: 50px;
+    }
+    label {
+        width: 20%;
+    }
+}
