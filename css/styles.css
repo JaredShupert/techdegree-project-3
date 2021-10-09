@@ -5,6 +5,17 @@
 
 *:focus {
     outline: #192841;
+    transition-duration: .125s;
+}
+
+body {
+    background-color: #d5dee7;
+}
+
+main {
+    padding: 40px;
+    border-radius: 5px;
+    background-color: #f8f8f8;
 }
 
 fieldset {
@@ -12,7 +23,6 @@ fieldset {
     margin: 0;
     padding: 0;
 }
-
 
 header {
     background: #192841;
@@ -40,7 +50,7 @@ legend {
 
 h2:not(:first-child),
 legend {
-    padding: 10px 0;
+    padding: 35px 0;
 }
 
 label,
@@ -75,18 +85,19 @@ select {
     border: none;
 }
 
-.newsletter label:not(:last-of-type) {
-    display: inline-block;
-    padding-left: 15px;
-}
-
-.newsletter label:last-of-type{
-    width: 100%;
+input::placeholder,
+select {
+    font-size: 15px;
 }
 
 input[required]::placeholder {
     text-align: right;
-    font-size: 15px;
+    
+}
+
+label[for="comment"]{
+    display: inline-block;
+    padding-top: 20px;
 }
 
 select:not(:valid) {
@@ -112,6 +123,35 @@ form div:first-child{
     flex-direction: column;
 }
 
+button {
+    width: 100%;
+    height: 70px;
+    border-radius: 5px;
+    font-size: 30px;
+    color: #fff;
+    background-color: orangered;
+    border: 2px solid orangered;
+}
+
+button:hover {
+    
+    background-color: #fff;
+    color: orangered;
+    transition-duration: .5s;
+    transition-property: all;
+}
+
+/* Class Styles */
+
+.newsletter label:not(:last-of-type) {
+    display: inline-block;
+    padding-left: 15px;
+}
+
+.newsletter label:last-of-type{
+    width: 100%;
+}
+
 .signup_head {
     text-align: center;
     border-bottom: 3px solid #192841;
@@ -127,27 +167,6 @@ legend {
 
 .newsletter {
     margin-top: 2em;
-}
-
-label[for="comment"]{
-    display: inline-block;
-    padding-top: 20px;
-}
-
-button {
-    width: 100%;
-    height: 70px;
-    border-radius: 5px;
-    font-size: 30px;
-    color: #fff;
-    background-color: orangered;
-    border: none;
-}
-
-button:hover {
-    border: 3px solid orangered;
-    background-color: #fff;
-    color: orangered;
 }
 
 #zip {
